@@ -13,9 +13,9 @@
 OS := $(shell uname)
 
 ifeq ($(OS),Linux)
-MLIBX = -L /etc/X11/lib -L minilibx -lmlx_Linux -lX11 -lXext
+MLIBX = -L /etc/X11/lib -L minilibx -lmlx -lX11 -lXext
 IMLIBX = -I minilibx
-MLX = minilibx/libmlx_Linux.a
+MLX = minilibx/libmlx.a
 MKMLX = make -C minilibx
 SHELL := /bin/bash
 ECHO := echo -e
